@@ -1,16 +1,9 @@
-var func=(a,b)=>{return a*b};
-console.log(func(3,2));
+const http=require('http');
+const server =http.createServer((req,res)=>{
+  console.log(`muskan gupta ${req}`);
 
+});
 
-let student=
-{
-Name:'Muskan',
-age:30,
-print(){
-  console.log(`student name is ${this.Name}`);
-  console.log(`student age is ${this.age}`);
-}
+server.listen(3001)
 
-}
-
-student.print();
+console.log('Muskan gupta')
